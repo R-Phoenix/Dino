@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Points : <span id="points">0</span></p>
+    <div id="box">
+        <div id="obstacle"></div>
+        <div id="fly" ></div>
+        <div id="player" ></div>
+    </div>
+    <div>
+        <button id="jump" onclick="jump()">Jump</button>
+        <button id="crouch" onmousedown="crouch()" onmouseup="stand()">Crouch</button>
+    </div>
+    <script src="action.js"></script>
+</body>
+</html>
