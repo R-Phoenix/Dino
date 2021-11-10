@@ -76,24 +76,31 @@ var check = setInterval (function(){
     fly2_left = (parseFloat(fly2_style.getPropertyValue("left"))*pxtovh);
     if (obstacle1_left < (left+5) && obstacle1_left > (left) && player_top > 30 && iscrouched == false){
         over();
+        alert("f");
     }
     if (obstacle1_left < (left+5) && obstacle1_left > (left) && player_top > 33 && iscrouched == true){
         over();
+        alert("f");
     }
     if (obstacle2_left < (left+5) && obstacle2_left > (left) && player_top > 30 && iscrouched == false){
         over();
+        alert("f");
     }
     if (obstacle2_left < (left+5) && obstacle2_left > (left) && player_top > 33 && iscrouched == true){
         over();
+        alert("f");
     }
     if (fly1_left < (left+5) && fly1_left > (left) && player_top < 32){
         over();
+        alert("f");
     }
     if (fly2_left < (left+5) && fly2_left > (left) && iscrouched == false){
         over();
+        alert("f");
     }
     if (fly2_left < (left+5) && fly2_left > (left) && player_top < 35 && iscrouched == true){
         over();
+        alert("f");
     }
 },10);
 

@@ -4,9 +4,10 @@
 }
 #box {
     margin: 4%;
-    width: 80%;
+    width: 90%;
     height: 50vh;
     border: 0.1vh black solid;
+    margin: 5%;
 }
 #player {
     position: relative;
@@ -99,16 +100,10 @@
     #player{
         left: 10vh;
     }
-    #box {
-        margin-left: 10%;
-    }
 }
 @media (max-width : 991px) and (min-width: 768px){
     #player{
         left: 8vh;
-    }
-    #box {
-        margin-left: 10%;
     }
 }
 @media (max-width: 767px) and (min-width: 576px) {   
