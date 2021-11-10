@@ -3,16 +3,16 @@
     text-align: center;
 }
 #box {
-    margin: 10%;
+    margin: 4%;
     width: 80%;
-    height: 200px;
-    border: 1px black solid;
+    height: 50vh;
+    border: 0.1vh black solid;
 }
 #player {
     position: relative;
-    height: 50px;
-    width: 40px;
-    top: 100px;
+    height: 6vh;
+    width: 5vh;
+    top: 34vh;
     background-color: black;
 }
 .jump {
@@ -24,31 +24,51 @@
 .jump_crouched {
     animation: jump_crouched 0.6s 1 linear;
 }
-#obstacle {
+#obstacle1 {
     position: relative;
-    height: 40px;
-    width: 20px;
-    top: 160px;
+    height: 4vh;
+    width: 2vh;
+    top: 46vh;
     left: 100%;
     background-color: black;
+    opacity: 0;
 }
-#fly {
+#obstacle2 {
     position: relative;
-    height: 10px;
-    width: 20px;
-    top: 90px;
+    height: 4vh;
+    width: 2vh;
+    top: 42vh;
     left: 100%;
     background-color: black;
+    opacity: 0;
+}
+#fly1 {
+    position: relative;
+    height: 1vh;
+    width: 2vh;
+    top: 33vh;
+    left: 100%;
+    background-color: black;
+    opacity: 0;
+}
+#fly2 {
+    position: relative;
+    height: 1vh;
+    width: 2vh;
+    top: 35vh;
+    left: 100%;
+    background-color: black;
+    opacity: 0;
 }
 @keyframes jump {
     0% {
-        top: 100px
+        top: 34vh;
     }
     50% {
-        top: 25px;
+        top: 26vh;
     }
     100% {
-        top: 100px;
+        top: 34vh;
     }
 }
 @keyframes slidein {
@@ -61,12 +81,38 @@
 }
 @keyframes jump_crouched {
     0% {
-        top: 125px;
+        top: 37vh;
     }
     50% {
-        top: 50px;
+        top: 29vh;
     }
     100% {
-        top: 125px;
+        top: 37vh;
+    }
+}
+@media (max-width: 575px){
+    #player{
+        left: 2vh;
+    }
+}
+@media (min-width: 992px){
+    #player{
+        left: 10vh;
+    }
+    #box {
+        margin-left: 10%;
+    }
+}
+@media (max-width : 991px) and (min-width: 768px){
+    #player{
+        left: 8vh;
+    }
+    #box {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {   
+    #player{
+        left: 4vh;
     }
 }
