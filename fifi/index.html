@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure of Wupo Fifi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adventures of Wupo Fifi</h1>
+    <p>Points : <span id="points">0</span></p>
+    <div id="box">
+        <div id="obstacle1"></div>
+        <div id="obstacle2"></div>
+        <div id="fly1" ></div>
+        <div id="fly2" ></div>
+        <div id="player" ></div>
+    </div>
+    <div>
+        <button id="jump" onclick="jump()">Jump</button>
+        <button id="crouch" onmousedown="crouch()" onmouseup="stand()">Crouch</button>
+    </div>
+    <p>Instruction : Hold down the DOWN arrow button to crouch. Press the UP arrow button to jump. Can press the button on the screen too.</p>
+    <script src="action.js"></script>
+</body>
+</html>

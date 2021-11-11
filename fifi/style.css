@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+#box {
+    margin: 4%;
+    width: 90%;
+    height: 50vh;
+    border: 0.1vh black solid;
+    margin: 5%;
+}
+#player {
+    position: relative;
+    height: 6vh;
+    width: 5vh;
+    top: 34vh;
+    background-image: url(witch.jpg);
+    background-size: cover;
+}
+.jump {
+    animation: jump 0.6s 1 linear;
+}
+.obstruct {
+    animation: slidein 3s infinite linear;
+}
+.jump_crouched {
+    animation: jump_crouched 0.6s 1 linear;
+}
+#obstacle1 {
+    position: relative;
+    height: 4vh;
+    width: 2vh;
+    top: 46vh;
+    left: 100%;
+    background-size: cover;
+    background-image: url(cat.jpg);
+    opacity: 0;
+}
+#obstacle2 {
+    position: relative;
+    height: 4vh;
+    width: 2vh;
+    top: 42vh;
+    left: 100%;
+    background-size: cover;
+    background-image: url(cat.jpg);
+    opacity: 0;
+}
+#fly1 {
+    position: relative;
+    height: 1vh;
+    width: 2vh;
+    top: 33vh;
+    left: 100%;
+    background-size: cover;
+    background-image: url(bird.png);
+    opacity: 0;
+}
+#fly2 {
+    position: relative;
+    height: 1vh;
+    width: 2vh;
+    top: 35vh;
+    left: 100%;
+    background-size: cover;
+    background-image: url(bird.png);
+    opacity: 0;
+}
+@keyframes jump {
+    0% {
+        top: 34vh;
+    }
+    50% {
+        top: 26vh;
+    }
+    100% {
+        top: 34vh;
+    }
+}
+@keyframes slidein {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+@keyframes jump_crouched {
+    0% {
+        top: 37vh;
+    }
+    50% {
+        top: 29vh;
+    }
+    100% {
+        top: 37vh;
+    }
+}
+@media (max-width: 575px){
+    #player{
+        left: 2vh;
+    }
+}
+@media (min-width: 992px){
+    #player{
+        left: 10vh;
+    }
+}
+@media (max-width : 991px) and (min-width: 768px){
+    #player{
+        left: 8vh;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {   
+    #player{
+        left: 4vh;
+    }
+}
